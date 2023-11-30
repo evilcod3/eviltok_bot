@@ -19,12 +19,12 @@ from progress_bar import progress, TimeFormatter, humanbytes
 from dotenv import load_dotenv
 
 load_dotenv()
-bot_token = os.environ.get('6854037564:AAHGH2Q_Y58zKRA43PqPUzDOc0HIi7NtfBI')
-workers = int(os.environ.get('4'))
-api = int(os.environ.get('10205722'))
-hash = os.environ.get('d3aa6c784f23c134af43c75db08611ec')
-chnnl = os.environ.get('https://t.me/evilcod3')
-BOT_URL = os.environ.get('https://t.me/eviltok_bot')
+bot_token = os.environ.get('BOT_TOKEN')
+workers = int(os.environ.get('WORKERS'))
+api = int(os.environ.get('API_KEY'))
+hash = os.environ.get('API_HASH')
+chnnl = os.environ.get('CHANNEL_URL')
+BOT_URL = os.environ.get('BOT_URL')
 app = Client("evilcode", bot_token=bot_token, api_id=api, api_hash=hash, workers=workers)
 
 
